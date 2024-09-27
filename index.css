@@ -53,12 +53,12 @@ body {
 }
 
 #circle-1 {
-    --circle-size: 20rem;
+    --circle-size: 17rem;
     z-index: 2;
 }
 
 #circle-2 {
-    --circle-size: 30rem;
+    --circle-size: 27rem;
     z-index: 1;
 }
 
@@ -82,8 +82,8 @@ body {
 .dev-icon {
     display: block;
     position: absolute;
-    width:  1.5rem;
-    height: 1.5rem;
+    width:  1.3rem;
+    height: 1.3rem;
     top:  50%;
     left: 50%;
     margin: calc(-1.5rem / 2);
@@ -98,6 +98,11 @@ body {
         rotate(var(--rotPos))
         translate(calc(var(--circle-size) / 2))
         rotate(var(--rotNeg));
+}
+
+#circle-2 .dev-icon {
+    width: 1.8rem;
+    height: 1.8rem;
 }
 
 .dev-icon::before {
