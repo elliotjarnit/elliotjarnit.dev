@@ -37,7 +37,7 @@ function startAnimation() {
 
   setInterval(() => {
     offset++;
-    circle1.style.setProperty("--offset", offset)
+    circle1.style.setProperty("--offset", -offset)
     circle2.style.setProperty("--offset", offset)
 
   }, 100)
