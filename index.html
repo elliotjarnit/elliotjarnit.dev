@@ -1,16 +1,256 @@
+<!doctype html>
 <html lang="en">
   <head>
-    <title>Elliot Jarnit-Bjergsoe</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Elliot Jarnit-Bjergsoe | Full-Stack Product Engineer</title>
+    <meta name="description" content="Elliot Jarnit-Bjergsoe is a Danish-born full-stack product engineer in Santa Barbara building web apps, creator tools, startup systems, and weird side projects.">
+    <meta name="author" content="Elliot Jarnit-Bjergsoe">
+    <meta name="theme-color" content="#f4f1ea">
+    <meta property="og:title" content="Elliot Jarnit-Bjergsoe | Full-Stack Product Engineer">
+    <meta property="og:description" content="Danish-born, Santa Barbara-based developer building Out, working at Upsellit, and shipping public projects.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://elliotjarnit.dev/">
+    <meta property="og:image" content="https://elliotjarnit.dev/images/elliot.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://elliotjarnit.dev/">
+    <link rel="preload" href="images/elliot.jpeg" as="image">
     <link rel="stylesheet" href="index.css">
-    <script src="index.js" defer></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Elliot Jarnit-Bjergsoe",
+        "url": "https://elliotjarnit.dev/",
+        "image": "https://elliotjarnit.dev/images/elliot.jpeg",
+        "jobTitle": "Full-Stack Product Engineer",
+        "email": "mailto:me@elliotjarnit.dev",
+        "birthPlace": {
+          "@type": "Country",
+          "name": "Denmark"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Santa Barbara",
+          "addressRegion": "CA",
+          "addressCountry": "US"
+        },
+        "sameAs": [
+          "https://github.com/elliotjarnit",
+          "https://www.linkedin.com/in/elliotjarnit"
+        ],
+        "knowsAbout": [
+          "Full-stack development",
+          "Product engineering",
+          "Frontend engineering",
+          "Creator tools",
+          "JavaScript",
+          "TypeScript",
+          "Java",
+          "Python",
+          "Game engine development"
+        ]
+      }
+    </script>
   </head>
   <body>
-    <div id="landing">
-      <div class="main-graphic">
-        <img id="main-img" src="images/elliot.jpeg" alt="Elliot Jarnit-Bjergsoe" class="landing-image">
-        <div class="circle" id="circle-1"></div>
-        <div class="circle" id="circle-2"></div>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="cursor-object" aria-hidden="true">
+      <img src="images/out.png" alt="">
+    </div>
+
+    <div class="intro" aria-label="Opening animation">
+      <div class="intro-inner">
+        <p class="intro-kicker">Hej</p>
+        <div class="intro-name" aria-hidden="true">
+          <span>E</span><span>l</span><span>l</span><span>i</span><span>o</span><span>t</span>
+        </div>
+        <div class="intro-route">
+          <div class="intro-route-labels" aria-hidden="true">
+            <span>Denmark</span>
+            <span>New York</span>
+            <span>California</span>
+          </div>
+          <svg viewBox="0 0 520 120" role="img" aria-label="Animated route from Denmark to New York to California">
+            <path d="M28 72 C 122 8, 186 18, 260 56 S 392 112, 492 34" />
+            <circle cx="28" cy="72" r="7" />
+            <circle cx="260" cy="56" r="7" />
+            <circle cx="492" cy="34" r="7" />
+          </svg>
+        </div>
       </div>
     </div>
+
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="brand-mark" href="#top" aria-label="Elliot Jarnit-Bjergsoe home">EJ-B</a>
+      <nav class="nav-links">
+        <a href="#work">work</a>
+        <a href="#proof">proof</a>
+        <a href="#stack">stack</a>
+        <a href="#contact">email</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section id="top" class="hero-section" aria-labelledby="hero-title">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="section-label"><span class="mini-flag" aria-hidden="true"></span> Full-stack developer</p>
+            <h1 id="hero-title">Getting ideas <span class="out-word">out.</span></h1>
+          </div>
+
+          <aside class="hero-note" aria-label="Short introduction">
+            <p>
+              Hej, I am Elliot. I was born in Denmark, now live in Santa Barbara, work as a full-stack developer at Upsellit, and build Out with my co-founder.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="mailto:me@elliotjarnit.dev">me@elliotjarnit.dev</a>
+              <a class="button button-secondary" href="/resume.pdf">resume</a>
+            </div>
+          </aside>
+        </div>
+
+        <div class="route-stage" aria-label="Denmark to Santa Barbara">
+          <div class="route-meta">
+            <span>Denmark</span>
+            <span>New York</span>
+            <span>California</span>
+          </div>
+          <svg class="route-line" viewBox="0 0 1200 220" aria-hidden="true">
+            <path d="M24 142 C 240 2, 360 10, 520 110 S 820 244, 1176 46" />
+            <circle cx="24" cy="142" r="9" />
+            <circle cx="520" cy="110" r="9" />
+            <circle cx="1176" cy="46" r="9" />
+          </svg>
+          <div class="route-photo">
+            <img src="images/elliot.jpeg" alt="Portrait of Elliot Jarnit-Bjergsoe">
+          </div>
+          <div class="danish-letters" aria-hidden="true">
+            <span>æ</span><span>ø</span><span>å</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="ticker-section" aria-label="Profile facts">
+        <div class="ticker-track">
+          <span>41 public repos</span>
+          <span>Out co-founder</span>
+          <span>Upsellit full-stack developer</span>
+          <span>Cider PRs</span>
+          <span>Album Poster Generator: 47 stars</span>
+          <span>Vue, Electron, full-stack product work</span>
+          <span>Java game engine experiments</span>
+        </div>
+      </section>
+
+      <section id="work" class="split-section work-section" aria-labelledby="work-title">
+        <div class="section-head">
+          <p class="section-label">Work</p>
+          <h2 id="work-title">Less case study. More trail of what I have made.</h2>
+        </div>
+
+        <div class="work-list">
+          <article class="work-row">
+            <a href="https://out.so" target="_blank" rel="noreferrer" class="work-title">
+              <span>Out</span>
+              <small>creator workflows</small>
+            </a>
+            <p>Startup I am building with my co-founder. I work across frontend, backend, and product decisions.</p>
+          </article>
+
+          <article class="work-row">
+            <a href="https://postergen.elliotjarnit.dev/" target="_blank" rel="noreferrer" class="work-title">
+              <span>Album Poster Generator</span>
+              <small>47 stars / 9 forks</small>
+            </a>
+            <p>A small visual web app that turns album art into a poster. Simple idea, useful enough that people found it.</p>
+          </article>
+
+          <article class="work-row">
+            <a href="https://cider.sh/" target="_blank" rel="noreferrer" class="work-title">
+              <span>Cider</span>
+              <small>Apple Music client</small>
+            </a>
+            <p>I helped develop Cider, a cross-platform Apple Music app built from the ground up with Vue. I worked across the app, including playlist flows, settings, localization fixes, confirmation behavior, and equalizer preset work.</p>
+          </article>
+
+          <article class="work-row">
+            <a href="https://github.com/elliotjarnit/ElliotEngine-Runtime" target="_blank" rel="noreferrer" class="work-title">
+              <span>ElliotEngine</span>
+              <small>Java 3D engine</small>
+            </a>
+            <p>Object importing, input management, UI overlay, window handling, JAR packaging, and a chess game built on top.</p>
+          </article>
+
+          <article class="work-row">
+            <a href="https://github.com/elliotjarnit?tab=repositories" target="_blank" rel="noreferrer" class="work-title">
+              <span>Small builds</span>
+              <small>whatever I was curious about</small>
+            </a>
+            <p>Weather scripts, a Prisma queue, Electron school tools, Discord music bots, Minecraft mod forks, and experiments.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="proof" class="proof-section" aria-labelledby="proof-title">
+        <p class="section-label">Public proof</p>
+        <h2 id="proof-title">Anyone can write a polished paragraph. These are easier to check.</h2>
+        <div class="proof-grid">
+          <a href="https://github.com/elliotjarnit" target="_blank" rel="noreferrer">
+            <strong>41</strong>
+            <span>public GitHub repositories</span>
+          </a>
+          <a href="https://postergen.elliotjarnit.dev/" target="_blank" rel="noreferrer">
+            <strong>47</strong>
+            <span>stars on Album Poster Generator</span>
+          </a>
+          <a href="https://cider.sh/" target="_blank" rel="noreferrer">
+            <strong>Cider</strong>
+            <span>helped build a cross-platform Apple Music experience</span>
+          </a>
+          <a href="https://www.linkedin.com/in/elliotjarnit" target="_blank" rel="noreferrer">
+            <strong>342</strong>
+            <span>LinkedIn followers surfaced publicly</span>
+          </a>
+        </div>
+      </section>
+
+      <section id="stack" class="stack-section" aria-labelledby="stack-title">
+        <div class="section-head">
+          <p class="section-label">Stack</p>
+          <h2 id="stack-title">The list is long because the projects kept changing.</h2>
+        </div>
+        <div class="stack-marquee" aria-label="Technology list">
+          <div class="stack-track">
+            <span>TypeScript</span><span>Vue</span><span>Nuxt</span><span>React</span><span>Next</span><span>Svelte</span><span>Node</span><span>Python</span><span>PostgreSQL</span><span>Prisma</span><span>Java</span><span>Electron</span><span>Three.js</span><span>OpenGL</span>
+          </div>
+        </div>
+        <div class="stack-notes">
+          <p>Frontend when the screen matters.</p>
+          <p>Backend when the promise has to hold.</p>
+          <p>Graphics and native-ish apps when I want to learn the hard way.</p>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section" aria-labelledby="contact-title">
+        <p class="section-label">Contact</p>
+        <h2 id="contact-title">If you want someone who can build across the product, email me.</h2>
+        <div class="contact-links">
+          <a href="mailto:me@elliotjarnit.dev">me@elliotjarnit.dev</a>
+          <a href="/resume.pdf">resume</a>
+          <a href="https://github.com/elliotjarnit" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/elliotjarnit" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Plain HTML, CSS, JavaScript.</span>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+    <script src="index.js" defer></script>
   </body>
 </html>
